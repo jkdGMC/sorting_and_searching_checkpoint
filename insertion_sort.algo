@@ -18,7 +18,7 @@ BEGIN
       tab[j+1] := tab[j];
       j := j - 1;
     END_WHILE
-    tab[j+1] := tab[i];
+    tab[j+1] := temp;
 
   END_FOR
   
