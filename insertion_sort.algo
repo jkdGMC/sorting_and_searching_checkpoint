@@ -1,0 +1,27 @@
+ALGORITHM inser_sort
+VAR
+  i,j,n,temp : INTEGER;
+  tab : ARRAY_OF INTEGER[5];
+BEGIN
+
+  n := tab.length
+  FOR i FROM 0 TO n - 1 STEP 1 DO
+    Read(tab[i])
+  END_FOR
+
+  FOR i FROM 1 TO n - 1 STEP 1 DO
+
+    temp := tab[j];
+    j := i -1;
+    WHILE (j >= 0 AND tab[j] > temp) DO
+      tab[j+1] := tab[j];
+      j := j - 1;
+    END_WHILE
+    tab[j+1] := temp;
+
+  END_FOR
+  
+END
+
+
+//     var tab = [4, 1, 3, 2];
